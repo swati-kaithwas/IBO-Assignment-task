@@ -66,18 +66,21 @@ const listOfProducts = [
     description: "Ceiling Fan",
   },
 ];
+// task 1
 function getUniqueProductCount() {
   let a1 = {};
   listOfProducts.map((e) => {
     if (a1[e.productName] === undefined) {
       a1[e.productName] = 1;
     } else {
-      a1[e.productName]++; 
+      a1[e.productName]++;
     }
   });
   return a1;
 }
 console.log(getUniqueProductCount());
+
+// task 2
 function getUniquePrducts() {
   let abc = {};
   let newArr = [];
